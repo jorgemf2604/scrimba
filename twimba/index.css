@@ -8,8 +8,9 @@ html, body {
 
 .app-container {
     width: 40%;
+    min-width: 330px;
     margin: 0 auto;
-    box-shadow: 1px 1px 7px black;
+    box-shadow: 0 0 8px black;
     padding: 0.5em 1em;
     margin-top: 20px;
 }
@@ -29,18 +30,18 @@ html, body {
 }
 
 .tweet-input-area .profile-pic {
-    width: 15%;
+    width: 20%;
     border-radius: 50%;
 }
 
 #main-input {
-    width: 80%;
+    width: 77%;
     height: 4rem;
     font-size: 1.8rem;
     border: none;
     outline: none;
     resize: none;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 #main-input:active, #main-input:focus {
@@ -48,7 +49,6 @@ html, body {
 }
 
 /* Tweet button */
-
 #tweet-btn {
     margin-top: 1em;
     width: 100%;
@@ -61,3 +61,118 @@ html, body {
     border: none;
     border-radius: 30px;
 }
+
+/* tweet template */
+#feed {
+    margin-top: 2em;
+}
+
+.tweet {
+    margin: 1em;
+}
+
+.tweet-inner {
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-body {
+    width: 80%;
+}
+
+.tweet-handle {
+    margin-bottom: 0;
+    font-family: monospace;
+    color: grey;
+    font-size: 1rem;
+}
+
+.tweet-text {
+    margin-top: .3em;
+}
+
+.tweet-profilePic {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.tweet-metrics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tweet-metric {
+    display: flex; 
+    gap: 5px;
+}
+
+.comments {
+    position: relative;
+}
+
+.comment-main {
+    margin-left: 4em;
+    margin-bottom: .5em;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.reply-profilePic {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.reply-body {
+    width: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+.add-comment-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.add-comment-btn {
+    margin-bottom: .5em;
+    width: 30%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-shadow: 0 0 1px black;
+    background-color: #1DA1F2;
+    color: white;
+    padding: .2em .4em;
+    border: none;
+    border-radius: 30px;
+}
+
+.add-comment-input {
+    height: 2.2em;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 5px;
+}
+
+.add-comment-input:active, .add-comment-input:focus {
+    border: dashed 4px #1DA1F2;
+}
+
+.reply-handle {
+    font-family: monospace;
+    color: grey;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.reply-text {
+    margin-top: .2em;
+}
+
