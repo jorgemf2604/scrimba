@@ -1,6 +1,63 @@
+/* GENERAL LAYOUT */
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
+.app-container {
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 7px black;
+    padding: 0.5em 1em;
+    margin-top: 20px;
+}
+
+/* Header title */
+.header-title {
+    color: #1DA1F2;
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
+/* Tweet input area */
+.tweet-input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-input-area .profile-pic {
+    width: 15%;
+    border-radius: 50%;
+}
+
+#main-input {
+    width: 80%;
+    height: 4rem;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 10px;
+}
+
+#main-input:active, #main-input:focus {
+    border: dashed 4px #1DA1F2;
+}
+
+/* Tweet button */
+
+#tweet-btn {
+    margin-top: 1em;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0 0 1px black;
+    background-color: #1DA1F2;
+    color: white;
+    padding: .2em .4em;
+    border: none;
+    border-radius: 30px;
+}
