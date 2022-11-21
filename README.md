@@ -5,4 +5,6 @@ Projects done for the Scrimba Front-End Developer Career Path.
 
 The projects: 
 
-- Twimba: https://jorgemf2604.github.io/scrimba/twimba/
+- Twimba: 
+    + url: https://jorgemf2604.github.io/scrimba/twimba/
+    + readme: https://github.com/jorgemf2604/scrimba/blob/main/twimba/README.md
