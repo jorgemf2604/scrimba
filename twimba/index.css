@@ -9,10 +9,9 @@ html, body {
 .app-container {
     width: 40%;
     min-width: 330px;
-    margin: 0 auto;
+    margin: 20px auto;
     box-shadow: 0 0 8px black;
     padding: 0.5em 1em;
-    margin-top: 20px;
 }
 
 /* Header title */
@@ -35,7 +34,7 @@ html, body {
 }
 
 #main-input {
-    width: 77%;
+    width: 75%;
     height: 4rem;
     font-size: 1.8rem;
     border: none;
@@ -106,6 +105,16 @@ html, body {
 .tweet-metric {
     display: flex; 
     gap: 5px;
+}
+
+.likedIcon {
+    color: red;
+    scale: 1.2;
+}
+
+.retweetIcon {
+    color: green;
+    scale: 1.2;
 }
 
 .comments {
