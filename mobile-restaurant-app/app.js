@@ -72,12 +72,12 @@ function addItemBtnClick(itemID) {
 
 function completeOrderBtnClick() {
     // clear inputs 
-    document.getElementById("modal-name").value = "";
+    const inputName =  document.getElementById("modal-name")
+    inputName.value = "";
     document.getElementById("modal-card-number").value = "";
     document.getElementById("modal-cvv").value = "";
     // show modal
     const modal = document.querySelector(".modal");
-    console.log(modal)
     modal.classList.remove("hidden");
 }
 
