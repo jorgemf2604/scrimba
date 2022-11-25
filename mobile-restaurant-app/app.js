@@ -71,8 +71,13 @@ function addItemBtnClick(itemID) {
 }  
 
 function completeOrderBtnClick() {
-    // show modal 
+    // clear inputs 
+    document.getElementById("modal-name").value = "";
+    document.getElementById("modal-card-number").value = "";
+    document.getElementById("modal-cvv").value = "";
+    // show modal
     const modal = document.querySelector(".modal");
+    console.log(modal)
     modal.classList.remove("hidden");
 }
 
