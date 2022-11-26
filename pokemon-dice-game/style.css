@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
+/* CSS reset */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+
+}
+
+/* General ayout */
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.app-container {
+    min-width: 320px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.main-title {
+    font-size: 2.4rem;
+    font-family: monospace;
+    text-align: center;
+    background-color: rgb(13, 59, 102);
+    color: white;
+    width: 100%;
+    margin-top: 0;
+    padding: 2rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: rgb(250, 240, 202);
+    font-family: 'Nerko One', cursive;
+    width: 98%;
+    color: black;
+    font-size: 3rem;
+    padding: 2rem;
+    border: 10px solid black;
+    margin: 1.5rem 0px;
+    border-radius: 10px;
+}
+
+.attack-btn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 3rem;
+    padding: 2rem;
+    background-color: tomato;
+    color: white;
+    font-weight: 700;
+    font-family: monospace;
+    border: none;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.attack-btn:hover, .attack-btn:active {
+    background-color: red;
+}
+
+.health-bar {
+    height: 1.5rem;
+    background-color: green;
+    border-radius: 5px;
+}
