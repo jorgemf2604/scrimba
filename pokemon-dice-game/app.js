@@ -1,4 +1,5 @@
 import { getPokemons } from "./data.js";
+import { Character } from "./Character.js";
 
 // helper functions
 
@@ -6,7 +7,7 @@ function renderCharacter(character, container) {
   let template = `
     <p>${character.name}</p>
     <img src="${character.image}" />
-    <p>Health: 60</p>
+    <p>Health: ${character.currentHealth}</p>
     <div class="health-bar"></div>
     <div class="dice-container"></div>
   `;
@@ -24,10 +25,18 @@ getPokemons(100)
     })
   };
   // pick hero/foe and filter them out from the array
-  const hero = pokemonData.filter(pokemon => pokemon.name === "jigglypuff")[0];
-  const foe = pokemonData[0];
+  let hero = pokemonData.filter(pokemon => pokemon.name === "jigglypuff")[0];
+  let foe = pokemonData[Math.floor(Math.random() * 100) + 1];
+  hero = new Character(hero);
+  foe = new Character(foe);
+
   // render characters
   renderCharacter(hero, ".hero-card");
   renderCharacter(foe, ".foe-card");
+  // event listener
+  document.querySelector(".attack-btn").addEventListener("click", e => {
+    console.log("attack");
+    // create an handle for the attact button
+  });
 });
 
