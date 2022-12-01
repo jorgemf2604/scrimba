@@ -55,9 +55,9 @@ h2 {
     width: 98%;
     color: black;
     font-size: 3rem;
-    padding: 2rem;
+    padding: 1rem;
     border: 10px solid black;
-    margin: 1.5rem 0px;
+    margin: 1rem 0px;
     border-radius: 10px;
 }
 
@@ -78,8 +78,40 @@ h2 {
     background-color: red;
 }
 
-.health-bar {
+.outer-health-bar {
+    background: #171217;
+    border-radius: 5px;
+}
+
+.inner-health-bar {
     height: 1.5rem;
     background-color: green;
     border-radius: 5px;
 }
+
+.danger {
+    background-color: darkred;
+}
+
+/* dice container */
+.dice-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.placeholder-dice, .dice {
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
