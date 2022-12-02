@@ -18,10 +18,23 @@ class Character {
     return new Array(numberOfDice).fill(0).map(() => `<div class="placeholder-dice"></div>`).join("")
   }
 
+  getDiceScore() {
+    return new Array(this.numberOfDice).fill(0).map(() => Math.floor(Math.random() * 6) + 1);
+  }
+
   getDiceHtml() {
-    const diceValues = new Array(this.numberOfDice).fill(0).map(() => Math.floor(Math.random() * 6) + 1);
-    this.diceHtml = diceValues.map(value => `<div class="dice">${value}</div>`).join("");
+    this.diceValues = this.getDiceScore();
+    this.diceHtml = this.diceValues.map(value => `<div class="dice">${value}</div>`).join("");
   };
+
+  takeDamage(diceScores) {
+    const totalDamage = diceScores.reduce((total, score) => total+= score, 0);
+    this.currentHealth -= totalDamage;
+    if (this.currentHealth <= 0) {
+      this.currentHealth = 0;
+      this.isDead = true;
+    }
+  }
 
 
   getHealthBarHtml() {
