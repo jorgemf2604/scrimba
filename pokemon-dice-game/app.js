@@ -36,7 +36,7 @@ getPokemons(100)
     setTimeout(() => {
       document.body.innerHTML = `
         <div class="end-game">
-          <h3><Game Over</h3>
+          <h3>Game Over</h3>
           <h3>${message}</h3>
           <button class="reload">Play again</button>
         </div>
