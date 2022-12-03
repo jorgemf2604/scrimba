@@ -29,6 +29,13 @@ body {
     background-color: white;
 }
 
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .main-title {
     font-size: 2.4rem;
     font-family: monospace;
@@ -47,6 +54,7 @@ body {
 h2 {
     font-size: 4rem;
     padding: 1rem;
+    text-align: center;
 }
 
 .card {
