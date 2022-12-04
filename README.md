@@ -24,4 +24,13 @@ ___
 ![](./mobile-restaurant-app/restaurant-app.gif)  
 
 ___   
-  
+
+## <div style="background-color: black; padding: 5px 10px; border-radius: 5px; font-family: monospace"> 🎲 Pokemon dice game 🎲 </div><br/>  ![](./pokemon-dice-game/images/charmander_shiny.gif) ![](./pokemon-dice-game/images/charmander_shiny.gif) ![](./pokemon-dice-game/images/charmander_shiny.gif)
+<br/>  
+
+**Url**: https://jorgemf2604.github.io/scrimba/pokemon-dice-game/  
+**Readme**:  https://github.com/jorgemf2604/scrimba/blob/main/pokemon-dice-game/README.md  
+<br/>  
+![](./pokemon-dice-game/images/pokemon.gif)  
+
+___   
